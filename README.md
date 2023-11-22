@@ -13,7 +13,7 @@ O projeto consistiu em criar uma rede de computadores com os requisitos de servi
 | RQ05| Configure um servidor NFS para compartilhar diretórios e arquivos entre máquinas na rede.|
 
 
-Topologia de rede
+1.1 Topologia de rede
 
 [Notebook]
      |
