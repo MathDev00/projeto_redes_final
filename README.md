@@ -68,6 +68,6 @@ Máquinas Virtuais
 | ------------- | ------------- | ------------- |
 | 1   | Todas as VM's  | Teste da instalação do docker, com intuito de checar a possibilidade de fornecer os serviços por meio da container|
 | 2     | Todas as VM's | Uso do docker ps para checagem de execução dos container, a fim de testar posteriormente os serviços |
-| 3     | VM3    | Teste de configuração da rede pública. Comunicação com outras VM's e provimento de internet para as demais redes. Teste de mascaramento das redes |
+| 3     | VM1  | Teste de funcionamento do dhcp.config, responsável pelo endereço de rede fornecido pelo serviço|
 
 
