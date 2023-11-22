@@ -26,6 +26,9 @@ VM1  VM2  VM3
     [Cliente1, Cliente2, Cliente3]
 
 
+    ![Texto Alternativo](REDES.png)
+
+
 
    
 2. Execução e configuração dos container
