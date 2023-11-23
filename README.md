@@ -82,7 +82,7 @@ subnet 192.168.1.0 netmask 255.255.255.0
 
 | Ordem | VM | Descrição|
 | ------------- | ------------- | ------------- |
-| 1   | Todas as VM's  | Teste da instalação do docker, com intuito de checar a possibilidade de fornecer os serviços por meio da container|
+| 1   | Todas as VM's  | Teste da instalação do docker, com intuito de checar a possibilidade de fornecer os serviços por meio do container|
 | 2     | Todas as VM's | Uso do docker ps para checagem de execução dos container, a fim de testar posteriormente os serviços |
 | 3     | VM1  | Teste de funcionamento do dhcp.config, responsável pelo endereço de rede fornecido pelo serviço|
 | 3     | VM2  | Teste de funcionamento do dhcp.config, responsável pelo endereço de rede fornecido pelo serviço|
