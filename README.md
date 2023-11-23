@@ -13,17 +13,10 @@ O projeto consistiu em criar uma rede de computadores com os requisitos de servi
 | RQ05| Configure um servidor NFS para compartilhar diretórios e arquivos entre máquinas na rede.|
 
 
-Topologia de rede
+1.1 Topologia de rede
 
-[Notebook]
-     |
-[VirtualBox Host]
-     |
-[Switch Virtual do VirtualBox]
-  /   |   \
-VM1  VM2  VM3
-     |    |  \
-    [Cliente1, Cliente2, Cliente3]
+
+![Texto Alternativo](REDES.png)
 
 
 
@@ -56,16 +49,42 @@ Máquinas Virtuais
 
 2.1 Configuração do servidor DHCP
 
+Observação: exemplo base, adaptado durante a execução
 
+Arquivo responsavel por determinar a configuração dos IP's automaticamente para dispositivos de redes. Definir a lógica de atribuição, minutagem
+e outras relacionadas à configuração DHCP.
 
+```
+ddns-update-style none;
+default-lease-time 600;
+max-lease-time 7200;
+authoritative;
+subnet 192.168.1.0 netmask 255.255.255.0
+{
+   range 192.168.1.100 192.168.1.200;
+   option routers 192.168.1.2;
+   option domain-name "minhaempresa";
+   option domain-name-servers 192.168.1.2;
+   option broadcast-address 192.168.1.255;
+}
+```
+ 
+ 2.1.1
+ 
+ default-lease-time e max-lease-tim e -> controle de tempo das concessões;
+
+ 2.1.2
+
+ subnet e netmask -> define IP e mascafra
 
 
 3. Testes e conclusão
 
 | Ordem | VM | Descrição|
 | ------------- | ------------- | ------------- |
-| 1   | VM1    | Teste do synced_folder, checagem de compartilhamento das pastas, por meio da navegação das pastas e observação de hospedagem de sites. Teste de instalação do Apache, com comandos Linux na VM em execução. Teste do ping de comunicação entre as máquinas de mesma rede, com endereço de rede 192.168.56.1|
-| 2     | VM2     | Teste de ping e instação do Mysql     |
-| 3     | VM3    | Teste de configuração da rede pública. Comunicação com outras VM's e provimento de internet para as demais redes. Teste de mascaramento das redes |
+| 1   | Todas as VM's  | Teste da instalação do docker, com intuito de checar a possibilidade de fornecer os serviços por meio do container|
+| 2     | Todas as VM's | Uso do docker ps para checagem de execução dos container, a fim de testar posteriormente os serviços |
+| 3     | VM1  | Teste de funcionamento do dhcp.config, responsável pelo endereço de rede fornecido pelo serviço|
+
 
 
