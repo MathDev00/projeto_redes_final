@@ -15,15 +15,6 @@ O projeto consistiu em criar uma rede de computadores com os requisitos de servi
 
 1.1 Topologia de rede
 
-[Notebook]
-     |
-[VirtualBox Host]
-     |
-[Switch Virtual do VirtualBox]
-  /   |   \
-VM1  VM2  VM3
-     |    |  \
-    [Cliente1, Cliente2, Cliente3]
 
 ![Texto Alternativo](REDES.png)
 
