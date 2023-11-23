@@ -51,6 +51,9 @@ Máquinas Virtuais
 
 Observação: exemplo base, adaptado durante a execução
 
+Arquivo responsavel por determinar a configuração dos IP's automaticamente para dispositivos de redes. Definir a lógica de atribuição, minutagem
+e outras relacionadas à configuração DHCP.
+
 ```
 ddns-update-style none;
 default-lease-time 600;
