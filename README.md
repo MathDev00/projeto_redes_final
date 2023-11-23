@@ -58,6 +58,20 @@ Máquinas Virtuais
 
 2.1 Configuração do servidor DHCP
 
+```
+ddns-update-style none;
+default-lease-time 600;
+max-lease-time 7200;
+authoritative;
+subnet 192.168.1.0 netmask 255.255.255.0
+{
+   range 192.168.1.100 192.168.1.200;
+   option routers 192.168.1.2;
+   option domain-name "minhaempresa";
+   option domain-name-servers 192.168.1.2;
+   option broadcast-address 192.168.1.255;
+}
+```
 
 
 
@@ -69,5 +83,7 @@ Máquinas Virtuais
 | 1   | Todas as VM's  | Teste da instalação do docker, com intuito de checar a possibilidade de fornecer os serviços por meio da container|
 | 2     | Todas as VM's | Uso do docker ps para checagem de execução dos container, a fim de testar posteriormente os serviços |
 | 3     | VM1  | Teste de funcionamento do dhcp.config, responsável pelo endereço de rede fornecido pelo serviço|
+| 3     | VM2  | Teste de funcionamento do dhcp.config, responsável pelo endereço de rede fornecido pelo serviço|
+
 
 
