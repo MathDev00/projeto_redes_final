@@ -74,8 +74,17 @@ subnet 192.168.1.0 netmask 255.255.255.0
    option broadcast-address 192.168.1.255;
 }
 ```
+ 2.1.1
+ 
+ ddns-update-style none: 
 
+ 2.1.2 
+ 
+ default-lease-time e max-lease-tim e -> controle de tempo das concessões;
 
+ 2.1.3
+
+ subnet e netmask -> define IP e mascafra
 
 
 3. Testes e conclusão
