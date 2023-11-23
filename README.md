@@ -58,6 +58,8 @@ Máquinas Virtuais
 
 2.1 Configuração do servidor DHCP
 
+Observação: exemplo base, adaptado durante a execução
+
 ```
 ddns-update-style none;
 default-lease-time 600;
