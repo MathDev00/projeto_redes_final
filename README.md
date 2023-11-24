@@ -89,12 +89,10 @@ subnet 192.168.1.0 netmask 255.255.255.0
 | 1   | Todas as VM's  | Teste da instalação do docker, com intuito de checar a possibilidade de fornecer os serviços por meio do container.|
 | 2     | Todas as VM's | Uso do docker ps para checagem de execução dos container, a fim de testar posteriormente os serviços.|
 | 3     | VM1  | Teste de funcionamento do "dhcp.config", responsável pelo endereço de rede fornecido pelo serviço.|
-| 4     | VM2  | Teste de funcionamento para verificar qual o enderço IP do gateway "ip r" e para avaliar a conectividade entre os equipamentos e verificar problemas de conexão com a Internet "ping -c (IP)".|
-| 5     | VM3  | Teste de funcionamento para verificar a versão instalada de seu servidor web Apache "apache2 -V" que mostra todos os dados do servidor Apache, como a versão, a data de criação e dados em geral.|
-| 6     | VM3  | Para testar o protocolo de rede para a transmissão de arquivos entre computadores (FTP), usamos apenas o "status" para mostrar o status atual da conexão.|
-| 7     | VM3  | Teste de verificação para mostrar que o NFS apareça que está em execução "showmount -e hostname"|
-
-
+| 4     | VM3  | Teste de funcionamento para verificar a versão instalada de seu servidor web Apache "apache2 -V" que mostra todos os dados do servidor Apache, como a versão, a data de criação e dados em geral.|
+| 5     | VM3  | Para testar o protocolo de rede para a transmissão de arquivos entre computadores (FTP), usamos apenas o "status" para mostrar o status atual da conexão.|
+| 6     | VM3  | Teste de verificação para mostrar que o NFS apareça que está em execução "showmount -e hostname"|
+| 7     | Todas as VM's   | Testar e entrar container com docker exec|
 
 
 
