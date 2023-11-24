@@ -39,6 +39,10 @@ Comandos básicos
 | 1    | vagrant up      | Geração da rede de computadores com Vagrantfile |
 | 2    | docker run     | Fornecimento dos serviços solicitados por meio da conteinerização|
 
+Com o vagrant up, as vm's serão criados e teremos acesso à rede de computadores.
+Já com o docker run, é possível criar container a partir da imagem do serviço solicitado.
+A execução da rede de computadores e o ofericimento dos serviços solicitados.
+
 Máquinas Virtuais
 
 | Nome  | Serviços | Descrição|
