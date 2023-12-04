@@ -1,0 +1,1 @@
+{"virtualbox":{"/diretorioVM1":{"guestpath":"/diretorioVM1","hostpath":"/home/matheus/Documentos/GitHub/projeto_redes_final/projeto_redes_final/diretorioPC","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/matheus/Documentos/GitHub/projeto_redes_final/projeto_redes_final","disabled":false,"__vagrantfile":true}}}
