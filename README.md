@@ -18,7 +18,7 @@ O projeto consistiu em criar uma rede de computadores com os requisitos de servi
 
 ![Texto Alternativo](REDES.png)
 
-
+Em cada Máquina Virtual está presente container, responsavel por fornecer determinado serviço.
 
    
 2. Execução e configuração dos container
