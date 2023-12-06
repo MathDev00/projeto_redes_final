@@ -18,7 +18,16 @@ O projeto consistiu em criar uma rede de computadores com os requisitos de servi
 
 ![Texto Alternativo](REDES.png)
 
-Em cada Máquina Virtual está presente container, responsavel por fornecer determinado serviço.
+Em cada Máquina Virtual está presente o Docker, que virtualiza o container, responsável por fornecer determinado serviço.
+
+| VM  | Nome da imagem |  Nome e serviço do container |
+| ------------- | ------------- |------------- |
+| VM1  | homeall/dhcphelper:latest | dhcp |
+| VM2  | ubuntu/bind9:9.18-22.04_beta | dns |
+| VM3 | httpd |serverweb4P e apache (servidor web)  |
+| VM4 | bogem/ftp |ftp|
+| VM5 |erichough/nfs-server|erichough/nfs-server (mesmo nome)|
+
 
    
 2. Execução e configuração dos container
