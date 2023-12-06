@@ -18,7 +18,11 @@ O projeto consistiu em criar uma rede de computadores com os requisitos de servi
 
 ![Texto Alternativo](REDES.png)
 
+1.2 Virtualização com o Docker
+
 Em cada Máquina Virtual está presente o Docker, que virtualiza o container, responsável por fornecer determinado serviço.
+
+
 
 | VM  | Nome da imagem |  Nome e serviço do container |
 | ------------- | ------------- |------------- |
