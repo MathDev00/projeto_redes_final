@@ -18,19 +18,19 @@ O projeto consistiu em criar uma rede de computadores com os requisitos de servi
 
 ![Texto Alternativo](REDES.png)
 
-1.2 Virtualização com o Docker
+1.2 Virtualização com o Docker e descrição das Máquinas virtuais
 
 Em cada Máquina Virtual está presente o Docker, que virtualiza o container, responsável por fornecer determinado serviço.
 
 
 
-| VM  | Nome da imagem |  Nome e serviço do container |
-| ------------- | ------------- |------------- |
-| VM1  | homeall/dhcphelper:latest | dhcp |
-| VM2  | ubuntu/bind9:9.18-22.04_beta | dns |
-| VM3 | httpd |serverweb4P e apache (servidor web)  |
-| VM4 | bogem/ftp |ftp|
-| VM5 |erichough/nfs-server|erichough/nfs-server (mesmo nome)|
+| VM  | Nome da imagem |  Nome e serviço do container | Descrição de serviço|
+| ------------- | ------------- |------------- |------------- |
+| VM1  | homeall/dhcphelper:latest | dhcp | Automatiza a atribuição de endereços IP e configurações de rede para dispositivos em uma rede |
+| VM2  | ubuntu/bind9:9.18-22.04_beta | dns |Associando nomes de domínio a endereços IP correspondentes |
+| VM3 | httpd |serverweb4P e apache (servidor web)  |Serviços de hospedagem web |
+| VM4 | bogem/ftp |ftp|Transferência de arquivos|
+| VM5 |erichough/nfs-server|erichough/nfs-server (mesmo nome)|Compartilhamento de arquivos diretórios em uma infraestrutura de rede|
 
 
    
@@ -49,20 +49,16 @@ Comandos básicos
 
 | Ordem | Comandos | Descrição|
 | ------------- | ------------- | ------------- |
-| 1    | vagrant up      | Geração da rede de computadores com Vagrantfile |
-| 2    | docker run     | Fornecimento dos serviços solicitados por meio da conteinerização|
+| 1    | apt update e sudo apt -y install vagrant     | Instalação do vagrant |
+| 2   | apt update e sudo apt -y docker.io     | Instalação do Docker |
+| 3    |  sudo apt install  virtualbox-qt   | Instalação do Virtual Box |
+| 4    | vagrant up      | Geração da rede de computadores com Vagrantfile |
+| 5    | docker run     | Fornecimento dos serviços solicitados por meio da conteinerização|
 
-Com o vagrant up, as vm's serão criados e teremos acesso à rede de computadores.
+Com o vagrant up, as vm's serão criadas e teremos acesso à rede de computadores.
 Já com o docker run, é possível criar container a partir da imagem do serviço solicitado.
-A execução da rede de computadores e o ofericimento dos serviços solicitados.
+A execução da rede de computadores e o oferecimento dos serviços solicitados.
 
-Máquinas Virtuais
-
-| Nome  | Serviços | Descrição|
-| ------------- | ------------- | ------------- |
-| VM1  | DHCP| Automatiza a atribuição de endereços IP e configurações de rede para dispositivos em uma rede.|
-| VM2  | DNS | Associando nomes de domínio a endereços IP correspondentes. |
-| VM3  | APACHE, FTP E NFS | Serviços de hospedagem web, transferência de arquivos e compartilhamento de arquivos em uma infraestrutura de rede. |
 
 2.1 Configuração do servidor DHCP
 
@@ -95,7 +91,9 @@ subnet 192.168.1.0 netmask 255.255.255.0
  subnet e netmask -> define IP e mascara
 
 
-3. Testes e conclusão
+3. Testes e resultados
+
+   3.1 Teste das VM's
 
 | Ordem | VM | Descrição|
 | ------------- | ------------- | ------------- |
@@ -103,9 +101,11 @@ subnet 192.168.1.0 netmask 255.255.255.0
 | 2     | Todas as VM's | Uso do docker ps para checagem de execução dos container, a fim de testar posteriormente os serviços.|
 | 3     | VM1  | Teste de funcionamento do "dhcp.config", responsável pelo endereço de rede fornecido pelo serviço.|
 | 4     | VM3  | Teste de funcionamento para verificar a versão instalada de seu servidor web Apache "apache2 -V" que mostra todos os dados do servidor Apache, como a versão, a data de criação e dados em geral.|
-| 5     | VM3  | Para testar o protocolo de rede para a transmissão de arquivos entre computadores (FTP), usamos apenas o "status" para mostrar o status atual da conexão.|
-| 6     | VM3  | Teste de verificação para mostrar que o NFS apareça que está em execução "showmount -e hostname"|
+| 5     | VM4  | Para testar o protocolo de rede para a transmissão de arquivos entre computadores (FTP), usamos apenas o "status" para mostrar o status atual da conexão.|
+| 6     | VM5  | Teste de verificação para mostrar que o NFS apareça que está em execução "showmount -e hostname"|
 | 7     | Todas as VM's   | Testar e entrar container com docker exec|
+
+   3.2 Testes e resultados da VM
 
 
 
