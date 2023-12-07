@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config| 
-
+  
   config.vm.box = "gusztavvargadr/ubuntu-server"    #1 - Box (imagem base) a ser usada por todas as vms
 
    config.vm.define "vm1" do |vm1| #dhcp
@@ -96,4 +96,3 @@ Vagrant.configure("2") do |config|
         SHELL
        end
 end
-	

@@ -12,10 +12,10 @@
     apt install -y docker.io
     #criar uma rede! docker --net
     docker run --privileged -d --name dhcp --net host -e "IP=172.21.0.100" homeall/dhcphelper:latest
-    #docker run -v vol-host:vol-cont
+    # #docker run -v vol-host:vol-cont
     
 SHELL
-  end
+  # end
 
   config.vm.define "vm2" do |vm2|
 
