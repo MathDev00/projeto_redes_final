@@ -116,7 +116,7 @@ A VM1 é responsável por oferecer a implantação do Docker, que realiza a cont
 
  - Testes na VM2
 
-A VM2 virtualiza o serviço de DNS por meio do Docker. Isso pode ser realizado  ao acessar o container e testando a atribuição de nomes a endereços de IP.
+A VM2 virtualiza o serviço de DNS por meio do Docker. Isso pode ser realizado  ao acessar o container e testando a atribuição de nomes a endereços de IP. O arquivo responsável é o resolv.conf.
 
   ![Texto Alternativo](dns.png)
 
