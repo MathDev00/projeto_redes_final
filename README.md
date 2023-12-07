@@ -107,9 +107,10 @@ subnet 192.168.1.0 netmask 255.255.255.0
 
    3.2 Testes e resultados da VM
 
-   
+- Testes na VM3
 
-![Texto Alternativo](REDES.png)
+   
+![Texto Alternativo](TESTES_APACHE.png)
 
 
 
