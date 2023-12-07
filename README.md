@@ -126,7 +126,7 @@ A VM2 virtualiza o serviço de DNS por meio do Docker. Isso pode ser realizado  
 
 O container presente na VM3 é responsável por realizar a hospedagem web de sites e arquivos, por meio do apache. Os testes realizados a seguir buscou testar o funcionamento do serviço, acessando o container e encontrando a pasta com os arquivos compartilhados do host, que hospeda no container o site
 
-![Texto Alternativo](TESTES_APACHE.jpg)
+![Texto Alternativo](TESTES_APACHE.png)
 
 - Testes na VM4
 
