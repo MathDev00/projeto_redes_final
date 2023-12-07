@@ -119,7 +119,7 @@ A VM1 é responsável por oferecer a implantação do Docker, que realiza a cont
 
 A VM2 virtualiza o serviço de DNS por meio do Docker. Isso pode ser testando acessando o coantainer e testando a atribuição de nomes a endereços de IP.
 
-  ![Texto Alternativo](dhs.png)
+  ![Texto Alternativo](dns.png)
 
   
 - Testes na VM3
