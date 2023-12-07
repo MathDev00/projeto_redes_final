@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config| 
-  
+
   config.vm.box = "gusztavvargadr/ubuntu-server"    #1 - Box (imagem base) a ser usada por todas as vms
 
    config.vm.define "vm1" do |vm1| #dhcp
@@ -72,7 +72,8 @@ Vagrant.configure("2") do |config|
     docker run -d -v /ftp:/home/vsftpd -p 20:20 -p 21:21 -p 47400:47400 -e FTP_USER=ekode -e FTP_PASS=ekode123 -e PASV_ADDRESS=10.0.75.1 --name ftp --restart=always bogem/ftp
     SHELL
     end
-     config.vm.define "vm5" do |vm5|#nfs
+
+    config.vm.define "vm5" do |vm5|#nfs
 
        vm5.vm.network "forwarded_port", guest: 1024, host:1024  
      
@@ -88,7 +89,7 @@ Vagrant.configure("2") do |config|
         
          docker run                                            \
             -v /nfs:/home \
-            -v /nfs:/etc/exports  \
+            -v /nfs:/etc  \
            --cap-add SYS_ADMIN                                 \
            -p 1024:1024                                        \
            erichough/nfs-server
