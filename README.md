@@ -115,6 +115,10 @@ A VM1 é responsável por oferecer a implantação do Docker, que realiza a cont
 
   ![Texto Alternativo](dhcp.png)
 
+ - Testes na VM2
+
+  ![Texto Alternativo](dns.png)
+
   
 - Testes na VM3
 
