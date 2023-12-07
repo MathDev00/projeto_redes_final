@@ -110,7 +110,7 @@ subnet 192.168.1.0 netmask 255.255.255.0
 - Testes na VM3
 
    
-![Texto Alternativo](TESTES_APACHE.png)
+![Texto Alternativo](TESTES_APACHE.jpg)
 
 
 
