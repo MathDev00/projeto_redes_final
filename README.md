@@ -111,7 +111,7 @@ Esse arquivo foi colocado no host e compartilhado com a VM1. Após esse comparti
 
 - Testes na VM1
 
-  A VM1 é responsável por oferecer a implantação do Docker, que realiza a conteinerização do serviço dhcp. Esse serviço pode ser testado acesssando o container e checando o envio da configuração para o serviço, que atribui endereços IP automaticamente aos dispositivos na rede.
+A VM1 é responsável por oferecer a implantação do Docker, que realiza a conteinerização do serviço dhcp. Esse serviço pode ser testado acesssando o container e checando o envio da configuração para o serviço, que atribui endereços IP automaticamente aos dispositivos na rede.
 
   ![Texto Alternativo](dhcp.png)
 
