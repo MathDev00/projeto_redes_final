@@ -111,13 +111,16 @@ Esse arquivo foi colocado no host e compartilhado com a VM1. Após esse comparti
 
 - Testes na VM1
 
-  A VM1 é responsável por oferecer a implantação do Docker, que realiza a conteinerização do serviço dhcp. Isso serviço é testado por meio do 
+  A VM1 é responsável por oferecer a implantação do Docker, que realiza a conteinerização do serviço dhcp. Esse serviço pode ser testado acesssando o container e checando o envio da configuração para o serviço, que atribui endereços IP automaticamente aos dispositivos na rede.
 
+  ![Texto Alternativo](dhcp.png)
+
+  
 - Testes na VM3
 
 O container presente na VM3 é responsável por realizar a hospedagem web de sites e arquivos, por meio do apache. Os testes realizados a seguir buscou testar o funcionamento do serviço, acessando o container e encontrando a pasta com os arquivos compartilhados do host, que hospeda no container o site
 
-![Texto Alternativo](TESTES_APACHE.png)
+![Texto Alternativo](TESTES_APACHE.jpg)
 
 
 
