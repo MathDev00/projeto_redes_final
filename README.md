@@ -81,6 +81,8 @@ subnet 192.168.1.0 netmask 255.255.255.0
    option broadcast-address 192.168.1.255;
 }
 ```
+
+Esse arquivo foi colocado no host e compartilhado com a VM1. Após esse compartilhamento vai ser possível enviar para o container e configurar o serviço dhcp de acordo com
  
  2.1.1
  
