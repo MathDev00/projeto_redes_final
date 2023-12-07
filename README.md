@@ -115,12 +115,25 @@ A VM1 é responsável por oferecer a implantação do Docker, que realiza a cont
 
   ![Texto Alternativo](dhcp.png)
 
+ - Testes na VM2
+
+A VM2 virtualiza o serviço de DNS por meio do Docker. Isso pode ser realizado  ao acessar o container e testando a atribuição de nomes a endereços de IP.
+
+  ![Texto Alternativo](dns.png)
+
   
 - Testes na VM3
 
 O container presente na VM3 é responsável por realizar a hospedagem web de sites e arquivos, por meio do apache. Os testes realizados a seguir buscou testar o funcionamento do serviço, acessando o container e encontrando a pasta com os arquivos compartilhados do host, que hospeda no container o site
 
 ![Texto Alternativo](TESTES_APACHE.jpg)
+
+- Testes na VM4
+
+Essa VM realiza a criação de container para oferecer o serviço de FTP, que permitir a transferência de arquivos na rede. Acessando os arquivos de confi e etc.
+
+![Texto Alternativo](ftp.jpg)
+
 
 
 
