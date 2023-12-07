@@ -132,7 +132,7 @@ O container presente na VM3 é responsável por realizar a hospedagem web de sit
 
 Essa VM realiza a criação de container para oferecer o serviço de FTP, que permitir a transferência de arquivos na rede. Acessando os arquivos de confi e etc.
 
-![Texto Alternativo](ftp.jpg)
+![Texto Alternativo](ftp.png)
 
 
 
