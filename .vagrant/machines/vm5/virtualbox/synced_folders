@@ -1,1 +1,0 @@
-{"virtualbox":{"/nfs":{"guestpath":"/nfs","hostpath":"/home/matheus/Documentos/GitHub/projeto_redes_final/projeto_redes_final/ftp","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/matheus/Documentos/GitHub/projeto_redes_final/projeto_redes_final","disabled":false,"__vagrantfile":true}}}
